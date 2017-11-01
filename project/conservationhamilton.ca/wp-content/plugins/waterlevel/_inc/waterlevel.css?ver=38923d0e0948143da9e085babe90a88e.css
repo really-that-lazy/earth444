@@ -1,0 +1,74 @@
+
+#water_info_content, #flood_info_content {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+#water_info_content h4, #flood_info_content h4 {
+	color: #3BB375;
+}
+
+#water_info_content div, #flood_info_content div{
+	position: relative;
+	top: 20%;
+	width: 50%;
+	margin: 0 auto;
+	background-color: #fff;
+	color: #000;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #000;
+	padding: 10px;
+}
+
+#water_info_content td, #flood_info_content td {
+	padding: 6px;
+}
+
+#waterlevelinfo { display:none; }
+#floodlevelinfo { display:none; }
+#water_info_content{
+	text-align: left!important;
+}
+#water_info_content p {
+	margin-top: 1em;
+}
+.showwater, .showflood {
+	cursor: pointer;
+}
+.water_info {
+	font-size: 0.8em;
+	margin-top:5px;
+	text-align:center;
+}
+.waterlevel ul {margin:0; padding:0;}
+.waterlevel li{
+	margin: 0 10px;
+	padding-bottom:0!important;
+    width: 170px;
+	list-style:none;
+}
+
+a.waterlink {
+	color: #146E40!important;
+	text-decoration: underline;
+	padding: 20px 0;
+	display: inline-block;
+	width: 100%;
+	font-weight: bold;
+	text-align: right;
+}
+
+.colourbox {
+	display:inline;
+	height:16px;
+	width:12px;
+}
+
+div.waterlevel {  width: 170px!important;margin-left:15px }
+#flood-warning-panel { height:98px!important; width:493px!important;}

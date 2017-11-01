@@ -1,0 +1,85 @@
+/*--
+	Theme Name: HCA - MAIN SITE
+	Theme URI: http://info.template-help.com/help/
+	Description: HCA Main public site theme, based on Cherry Framework.
+	Author: TRWA
+	Author URI: http://trwa.ca
+	Template: CherryFramework
+	Version: 3.1.2
+--*/
+
+/* ----------------------------------------
+	Please, You may put custom CSS here
+---------------------------------------- */
+
+.footer-widgets .menu-main-menu-container > ul > li {
+	display: inline-block;
+	vertical-align: top;
+	min-width: 200px;
+	width: 22%;
+	font-size: 18px;
+	margin: 0 20px 0 0;
+}
+.footer-widgets .menu-main-menu-container > ul > li > ul{
+	margin: 10px 0 0 0;
+}
+.footer-widgets .menu-main-menu-container ul  li{
+	list-style-type: none;
+}
+.footer-widgets .menu-main-menu-container ul{
+	margin: 0 0 0 15px;
+}
+/*Hide Home link*/
+.footer-widgets .menu-main-menu-container > ul > li:first-child {
+	display: none;
+}
+.footer-widgets .menu-main-menu-container .sub-menu {
+	font-size: 12px;
+}
+/*Hide Admissions Link & Foundation link*/
+.menu-main-menu-container #menu-item-4760, .menu-main-menu-container #menu-item-1984 {
+	display: none;
+}
+#footer-text, #footer-text a, .footer-widgets .menu-main-menu-container a{
+	color: #aaa;
+}
+#copyright {
+	float: left;
+	margin-left: 0;
+	height: 0;
+}
+#privacy {
+	float: right;
+}
+#footer-line {
+	clear:both;
+	height: 20px;
+	border-bottom: 1px solid #aaa;
+}
+.parallax-slider .primaryCaption a, .parallax-slider .secondaryCaption a{
+	color: #fff!important;
+	text-decoration: underline;
+}
+/*Woocommerce mods*/
+#sidebar .widget_shopping_cart_content li{
+	background: none !important;
+}
+.woocommerce ul.products li.product .price {
+	color: #28794f!important;
+}
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+	background-color: #28794f!important;
+	color: #fff!important;
+}
+.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover {
+	background-color: #dad8da!important;
+	color: #28794f!important;
+}
+
+.widget_beachstatus_widget ul li{
+	background: none!important;
+	padding-left: 0!important;
+}
+mark {
+	background-color: transparent;
+}

@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /wp-admin/*.php$
+Disallow: /wp-login.php
+Disallow: /wp-register.php
+Disallow: /wp-comments
+Disallow: /cgi-bin
+Sitemap: http://conservationhamilton.ca/sitemapindex.xml

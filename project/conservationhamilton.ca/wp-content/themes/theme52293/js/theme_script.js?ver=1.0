@@ -1,0 +1,12 @@
+jQuery(document).ready(function($) {
+  
+    $('a.back-top').click(function () {
+		$('body,html').stop(false, false).animate({
+			scrollTop: 0
+		}, 800);
+		return false;
+	});
+    
+    $('.content-holder .title-section .title-img-holder').fullwidth_stretcher();
+    
+});

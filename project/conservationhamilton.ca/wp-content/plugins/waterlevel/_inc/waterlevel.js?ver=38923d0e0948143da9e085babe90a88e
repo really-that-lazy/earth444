@@ -1,0 +1,17 @@
+jQuery( function ( $ ) {
+
+	$(".showwater").click(function(){
+		$("#water_info_content").css("display", "block");	
+	});
+	$(".showflood").click(function(){
+		$("#flood_info_content").css("display", "block");	
+	});
+	$(".hidewater").click(function(){
+		$("#water_info_content").css("display", "none");	
+	});
+	$(".hideflood").click(function(){
+		$("#flood_info_content").css("display", "none");	
+	});
+	
+});
+

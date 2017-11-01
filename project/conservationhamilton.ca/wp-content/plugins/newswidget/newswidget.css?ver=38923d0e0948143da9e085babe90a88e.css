@@ -1,0 +1,95 @@
+.bubble 
+{
+	position: relative;
+	width: 290px;
+	height: 40px;
+	padding: 0px;
+	background: #C00000;
+	-webkit-border-radius: 11px;
+	-moz-border-radius: 11px;
+	border-radius: 11px;
+	border: #515353 solid 1px;
+	color: #fff;
+	z-index:200;
+	left: 290px;
+	top: 10px;
+	font: 13px/21px 'Istok Web', sans-serif;
+	-webkit-box-shadow: 0px 0px 13px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 13px -1px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 13px -1px rgba(0,0,0,0.75);
+	-webkit-transition:width 1s, height 1s, background-color 1s, -webkit-transform 1s;
+    transition:width 1.5s, height 1.5s, background-color 1.5s, transform 1.5s;
+	cursor: pointer;
+}
+
+.bubble:hover{
+	height: auto;
+}
+.bubble ul {
+	display: none;
+}
+.bubble:hover ul {
+	display: block;
+}
+
+.bubble:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 0 16px 15px;
+border-color: #C00000 transparent;
+display: block;
+width: 0;
+z-index: 1;
+margin-left: -16px;
+top: -15px;
+left: 20%;
+}
+
+.bubble:before 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 0 16px 15px;
+border-color: #515353 transparent;
+display: block;
+width: 0;
+z-index: 0;
+margin-left: -16px;
+top: -16px;
+left: 20%;
+}
+
+.bubble p {
+	padding: 10px 0 0 10px;
+}
+
+#bubblewrap{
+	height: 0;
+	width: 1170px;
+	margin: 0 auto;
+}
+
+ul.hca_alerts{
+	padding: 5px;
+}
+.hca_alerts li:before{
+	content: "\f227";
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+     font: normal 16px/1 'dashicons';
+	margin-right: 10px;
+	word-wrap: break-word;
+}
+.hca_alerts li{
+	list-style: none;
+	padding-bottom: 4px;
+}
+.hca_alerts a, .bubble a{
+	color: #fff;
+}
+.hca_alerts a:hover, .bubble a:hover{
+	border-bottom: 1px dashed #fff;
+}
